@@ -19,14 +19,19 @@ module.exports = new datafire.Action({
     maximum: 200
   }],
   handler: (input, context) => {
-    console.log('this', Object.keys(this));
     return datafire.flow(context)
       .then(_ => google_sheets.spreadsheets.values.append({
         spreadsheetId: SHEET_ID,
-        range: "A1:A" + NUM_INPUTS,
+        range: "A1:A" + INPUTS.length,
+        valueInputOption: "USER_ENTERED",
+        body: {
+          values: [
+            INPUTS.map(i => input[i.title])
+          ],
+        },
       }, context))
   },
 });
 
-const NUM_INPUTS = module.exports.inputs.length;
-console.log('inputs', NUM_INPUTS);
+const INPUTS = module.exports.inputs;
+
