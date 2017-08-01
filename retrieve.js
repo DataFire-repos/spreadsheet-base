@@ -1,5 +1,6 @@
 "use strict";
 let datafire = require('datafire');
+let google_sheets = require('@datafire/google_sheets').actions;
 let inputs = require('./create').inputs;
 
 function getColumnLetter(idx) {
@@ -8,7 +9,6 @@ function getColumnLetter(idx) {
 
 const PAGE_SIZE = 10;
 
-var google_sheets = require('@datafire/google_sheets').actions;
 module.exports = new datafire.Action({
   description: "",
   handler: (input, context) => {
