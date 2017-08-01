@@ -1,3 +1,10 @@
 actions:
   create: ./create.js
   retrieve: ./retrieve.js
+paths:
+  /pets:
+    get:
+      action: retrieve
+      accounts:
+        google_sheets: google_sheets
+      input: {}
