@@ -7,7 +7,7 @@ function getColumnLetter(idx) {
   return String.fromCharCode(idx + 64);
 }
 
-const PAGE_SIZE = 4;
+const PAGE_SIZE = 10;
 
 module.exports = new datafire.Action({
   description: "",
