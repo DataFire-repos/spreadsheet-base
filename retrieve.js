@@ -9,6 +9,7 @@ function getColumnLetter(idx) {
 
 const PAGE_SIZE = 10;
 
+
 module.exports = new datafire.Action({
   description: "",
   handler: (input, context) => {
