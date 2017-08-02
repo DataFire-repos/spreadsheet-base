@@ -22,7 +22,6 @@ module.exports = new datafire.Action({
         range: getColumnLetter(startCol) + startRow + ':' + getColumnLetter(endCol) + endRow,
       }, context))
       .then(data => {
-        console.log(data)
         return data.values.map((row, rowNum) => {
           let obj = {id: rowNum + 1};
           inputs.forEach((input, idx) => {
