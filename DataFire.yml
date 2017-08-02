@@ -5,6 +5,5 @@ paths:
   /pets:
     get:
       action: retrieve
-      accounts:
-        google_sheets: google_sheets
+      accounts: {}
       input: {}
