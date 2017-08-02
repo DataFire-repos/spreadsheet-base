@@ -6,4 +6,3 @@ paths:
     get:
       action: retrieve
       accounts: {}
-      input: {}
