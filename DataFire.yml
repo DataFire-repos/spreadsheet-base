@@ -1,6 +1,6 @@
 actions:
   create: ./create.js
-  retrieve: ./retrieve.js
+  retrieve: ./retrieve_pets.js
 paths:
   /pets:
     get:
