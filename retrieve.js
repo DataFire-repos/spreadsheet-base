@@ -13,7 +13,7 @@ module.exports = new datafire.Action({
   description: "",
   handler: (input, context) => {
     let startRow = 1;
-    let endRow = startRow + PAGE_SIZE;
+    let endRow = startRow + PAGE_SIZE - 1;
     let startCol = 1;
     let endCol = inputs.length;
     return datafire.flow(context)
