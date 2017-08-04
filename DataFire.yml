@@ -2,27 +2,28 @@ actions:
   create: ./create.js
   retrieve: ./retrieve.js
   make_spreadsheet: ./make_spreadsheet.js
-
 setup:
   variables:
     spreadsheet_id:
       type: string
       action: make_spreadsheet
       value: output.spreadsheetId
+      accounts: {}
+      input:
+        title: blurp
     last_thing:
       type: number
     other_thing:
       type: boolean
       action: google_sheets/foo
-
-      
   accounts:
     google_sheets: google_sheets
     sender: google_gmail
     recipient: google_gmail
-
 paths:
   /pets:
     get:
       action: retrieve
       accounts: {}
+variables:
+  spreadsheet_id: 1TfEBff1ZZ6Ea8NgG27KKoCVKdlv4NNuE2yfLvb62I6k
