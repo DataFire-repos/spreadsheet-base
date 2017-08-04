@@ -6,6 +6,7 @@ actions:
 setup:
   variables:
     spreadsheet_id:
+      type: string
       action: make_spreadsheet
       value: output.spreadsheet_id
   accounts:
