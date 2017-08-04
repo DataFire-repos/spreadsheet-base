@@ -1,6 +1,7 @@
 actions:
   create: ./create.js
   retrieve: ./retrieve.js
+  make_spreadsheet: ./make_spreadsheet.js
 paths:
   /pets:
     get:
