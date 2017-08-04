@@ -14,7 +14,6 @@ setup:
       action: google_sheets/foo
     last_thing:
       type: number
-      action: create
       
   accounts:
     google_sheets: google_sheets
