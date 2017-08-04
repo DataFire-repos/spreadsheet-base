@@ -9,11 +9,12 @@ setup:
       type: string
       action: make_spreadsheet
       value: output.spreadsheetId
+    last_thing:
+      type: number
     other_thing:
       type: boolean
       action: google_sheets/foo
-    last_thing:
-      type: number
+
       
   accounts:
     google_sheets: google_sheets
