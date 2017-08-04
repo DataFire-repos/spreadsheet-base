@@ -8,6 +8,8 @@ setup:
     spreadsheet_id:
       action: make_spreadsheet
       value: output.spreadsheet_id
+  accounts:
+    google_sheets: google_sheets
 
 paths:
   /pets:
