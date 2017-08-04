@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@datafire/google_sheets": "2.0.2"
+    "@datafire/google_sheets": "2.0.2",
+    "@datafire/google_gmail": "2.0.2"
   }
 }
