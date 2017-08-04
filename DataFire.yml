@@ -8,7 +8,7 @@ setup:
     spreadsheet_id:
       type: string
       action: make_spreadsheet
-      value: output.spreadsheet_id
+      value: output.spreadsheetId
     other_thing:
       type: boolean
       action: google_sheets/foo
