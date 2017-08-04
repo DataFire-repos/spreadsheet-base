@@ -2,6 +2,13 @@ actions:
   create: ./create.js
   retrieve: ./retrieve.js
   make_spreadsheet: ./make_spreadsheet.js
+
+setup:
+  variables:
+    spreadsheet_id:
+      action: make_spreadsheet
+      value: output.spreadsheet_id
+
 paths:
   /pets:
     get:
