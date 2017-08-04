@@ -18,7 +18,7 @@ module.exports = new datafire.Action({
     let endCol = inputs.length;
     return datafire.flow(context)
       .then(_ => google_sheets.spreadsheets.values.get({
-        spreadsheetId: "15bv6kNNBkXp4SkuZ5eVh00E7nrEqHAu382aYp2sqUyA",
+        spreadsheetId: context.variables.spreadsheet_id,
         range: getColumnLetter(startCol) + startRow + ':' + getColumnLetter(endCol) + endRow,
       }, context))
       .then(data => {

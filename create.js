@@ -3,8 +3,6 @@ let datafire = require('datafire');
 
 var google_sheets = require('@datafire/google_sheets').actions;
 
-const SHEET_ID = "15bv6kNNBkXp4SkuZ5eVh00E7nrEqHAu382aYp2sqUyA";
-
 module.exports = new datafire.Action({
   description: "Creates a new item in the spreadsheet",
   inputs: [{
@@ -21,7 +19,7 @@ module.exports = new datafire.Action({
   handler: (input, context) => {
     return datafire.flow(context)
       .then(_ => google_sheets.spreadsheets.values.append({
-        spreadsheetId: SHEET_ID,
+        spreadsheetId: context.variables.spreadsheet_id,
         range: "A1:A" + INPUTS.length,
         valueInputOption: "USER_ENTERED",
         body: {
