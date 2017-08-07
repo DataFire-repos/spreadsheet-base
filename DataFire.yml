@@ -15,6 +15,9 @@ paths:
     get:
       action: retrieve
       accounts: {}
+    post:
+      action: create
+      accounts: {}
   '/docs/{filename}':
     get:
       action: lucybot_docs/serve
