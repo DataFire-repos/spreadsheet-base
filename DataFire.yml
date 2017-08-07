@@ -10,11 +10,15 @@ setup:
       value: output.spreadsheetId
   accounts:
     google_sheets: google_sheets
-
 paths:
   /pets:
     get:
       action: retrieve
       accounts: {}
+  '/docs/{filename}':
+    get:
+      action: lucybot_docs/serve
+      accounts: {}
+      input: {}
 variables:
   spreadsheet_id: 1TfEBff1ZZ6Ea8NgG27KKoCVKdlv4NNuE2yfLvb62I6k

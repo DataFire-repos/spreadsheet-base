@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@datafire/google_sheets": "2.0.2",
-    "@datafire/lucybot_docs": "1.0.2"
+    "@datafire/lucybot_docs": "1.0.3"
   },
   "name": "spreadsheet-base",
   "version": "1.0.0"
