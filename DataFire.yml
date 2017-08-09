@@ -22,5 +22,3 @@ paths:
     get:
       action: lucybot_docs/serve
       accounts: {}
-variables:
-  spreadsheet_id: 1TfEBff1ZZ6Ea8NgG27KKoCVKdlv4NNuE2yfLvb62I6k
