@@ -9,7 +9,10 @@ setup:
       action: make_spreadsheet
       value: output.spreadsheetId
   accounts:
-    google_sheets: google_sheets
+    google_sheets:
+      integration: google_sheets
+      scopes:
+        - 'https://www.googleapis.com/auth/spreadsheets'
 paths:
   /pets:
     get:
