@@ -9,6 +9,12 @@ module.exports = new datafire.Action({
   }],
   handler: (input, context) => {
     return datafire.flow(context)
-      .then(_ => google_sheets.spreadsheets.create({}, context))
+      .then(_ => google_sheets.spreadsheets.create({
+        body: {
+          properties: {
+            title: input.title,
+          },
+        },
+      }, context))
   },
 });
