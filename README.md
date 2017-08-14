@@ -5,18 +5,13 @@ Create an API using Google Sheets as a backend
 You'll need to connect your Google account, and create a
 new spreadsheet to store your data.
 
-### On app.datafire.io
 * Go to Project -> Settings and click "Run Setup"
-* You'll be prompted to connect your Google account. Make sure the scope "View and manage your spreadsheets in Google Drive" is checked.
-* When prompted to create a new spreadsheet, enter a title
+  * Connect your Google account
+  * Pick a title for your spreadsheet
 * Once the setup is done, save your project
 
 You'll see the spreadsheetId in your settings page. You can access the created spreadsheet at:
 `https://docs.google.com/spreadsheets/d/$SPREADSHEET_ID`
-
-### On the command line
-* Run `datafire authenticate google_sheets`
-* Run `datafire run ./make_spreadsheet -i.title "Your spreadsheet title"`
 
 ## Desiging the API
 
