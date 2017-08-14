@@ -5,7 +5,7 @@ Create an API using Google Sheets as a backend
 You'll need to connect your Google account, and create a
 new spreadsheet to store your data.
 
-* Go to Project -> Settings and click "Run Setup"
+* Go to [Project -> Settings](../settings) and click "Run Setup"
   * Connect your Google account
   * Pick a title for your spreadsheet
 * Once the setup is done, save your project
