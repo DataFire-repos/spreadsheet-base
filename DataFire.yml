@@ -8,8 +8,10 @@ setup:
       type: string
       action: make_spreadsheet
       value: output.spreadsheetId
+      description: Choose a title for the spreadsheet that will hold your data.
   accounts:
     google_sheets:
+      description: Connect your Google Sheets account in order to access and update spreadsheet data.
       integration: google_sheets
       scopes:
         - 'https://www.googleapis.com/auth/spreadsheets'
