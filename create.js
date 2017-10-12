@@ -28,6 +28,7 @@ module.exports = new datafire.Action({
         },
         valueInputOption: "RAW",
       }, context))
+      .then(_ => "Success")
   },
 });
 

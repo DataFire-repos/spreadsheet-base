@@ -20,6 +20,7 @@ module.exports = new datafire.Action({
       .then(_ => google_sheets.spreadsheets.values.get({
         spreadsheetId: context.variables.spreadsheet_id,
         range: getColumnLetter(startCol) + startRow + ':' + getColumnLetter(endCol) + endRow,
+        valueRenderOption: "UNFORMATTED_VALUE",
       }, context))
       .then(data => {
         let rows = (data.values || []).map((row, rowNum) => {

@@ -9,9 +9,14 @@ setup:
       action: make_spreadsheet
       value: output.spreadsheetId
       description: Choose a title for the spreadsheet that will hold your data.
+      accounts: {}
+      input:
+        title: spreadsheet base example
   accounts:
     google_sheets:
-      description: Connect your Google Sheets account in order to access and update spreadsheet data.
+      description: >-
+        Connect your Google Sheets account in order to access and update
+        spreadsheet data.
       integration: google_sheets
       scopes:
         - 'https://www.googleapis.com/auth/spreadsheets'
@@ -27,3 +32,7 @@ paths:
     get:
       action: lucybot_docs/serve
       accounts: {}
+options:
+  cors: true
+variables:
+  spreadsheet_id: 1o7NpR9pBmvfhc9dknMxnYTvlV_R-SdNX77Mp9IXPEYg
