@@ -1,6 +1,8 @@
 # Spreadsheet API
 Create an API using Google Sheets as a backend
 
+[Fork this project on DataFire.io](https://app.datafire.io/projects?baseRepo=https:%2F%2Fgithub.com%2FDataFire-repos%2Fspreadsheet-base)
+
 ## Setup
 You'll need to connect your Google account, and create a
 new spreadsheet to store your data.
